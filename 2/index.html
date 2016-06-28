@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+  <title>Whonix Wiki V2</title>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Documentation website'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+  <link href='assets.css' rel='stylesheet' type='text/css'>
+</head>
+<body>  
+  <nav id='sidebar'>
+	<h1>Whonix Wiki V2</h1>
+<ul id='links'>
+  
+    
+    <li><a href='#/response-status-codes'>Whonix</a></li>
+    
+  
+    
+    <li><a href='#/authentication'>Lorem</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <li><h2>Stuff</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class='GET'><a href='#/get-stuff'>Get stuff</a></li>
+              
+        <li class='PUT'><a href='#/put-a-thing'>Hidden Service</a></li>
+              
+        <li class='DELETE'><a href='#/delete-a-thing'>Whonix</a></li>
+      
+    
+    </ul>
+  </li>
+
+</ul>
+</nav>
+
+<section id='content'>
+
+  <article class=''>
+    <a name='/response-status-codes' href='#/response-status-codes'><h2>Whonix</h2></a>
+    <section class='body'>
+      <h3 id="wiki">Wiki</h3>
+
+<p>This is my prefered wiki concept.</p>
+
+<h3 id="why-it-uses-javascript">Why? IT USES JAVASCRIPT!!!</h3>
+
+<p>Yes, but JS is not necessary. It works both with and without. It looks better with though. Furthermore:</p>
+
+<ul>
+  <li>It is easier to edit than the other solutions, as far as I can tell.</li>
+  <li>It needs less memory (for some reason)…</li>
+</ul>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/authentication' href='#/authentication'><h2>Lorem</h2></a>
+    <section class='body'>
+      <p>Lololorem!</p>
+
+    </section>
+  </article>
+
+  <article class='GET'>
+    <a name='/get-stuff' href='#/get-stuff'><h2><code><b>GET</b> _posts/2012-12-27-get-stuff.md</code> Get stuff</h2></a>
+    <section class='body'>
+      <p>And lets test some more things</p>
+
+<p><code>Status: 200 OK</code>
+<code>{
+    {
+        id: thing_1,
+        name: 'My first thing'
+    },
+    {
+        id: thing_2,
+        name: 'My second thing'
+    }
+}</code></p>
+
+    </section>
+  </article>
+
+  <article class='PUT'>
+    <a name='/put-a-thing' href='#/put-a-thing'><h2><code><b>PUT</b> _posts/2012-12-25-put-a-thing.md</code> Hidden Service</h2></a>
+    <section class='body'>
+      <h3 id="introduction">Introduction</h3>
+
+<p>Be sure to read and understand Tor: Hidden Service Protocol (general information) and Configuring Hidden Services for Tor (standard setup, no isolated proxy) first. Note that hidden services are always only reachable using Tor or tunnel services, such as tor2web, (be careful).</p>
+
+<p>You do not need SSL, because connections to Tor hidden services are end-to-end encrypted by default [2]. [3] This is handy, as you do not have to bother with self signed certificates or certificate authorities.</p>
+
+<p>An adversary can see whether the service (and presumably Tor) is up and running or not.</p>
+
+<h3 id="hosting-any-hidden-services">Hosting ANY Hidden Services</h3>
+
+<p>You can provide any server service, which relies on TCP, such as web servers, IRC servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use OnionCat as a workaround.</p>
+
+<p>Below on this page is an example for a Hidden Webserver. On the Voip page is an example for a Hidden Voip Mumble Server.</p>
+
+<p>Even if someone hacks your hidden server software (lighttpd, thttpd, apache, etc.), the attacker can not steal your hidden service key or bypass Tor, see Attack on Whonix. The key is stored on the Whonix-Gateway. Once you cleaned your Whonix-Workstation, no one can impersonate your hidden service anymore.</p>
+
+<p>While using Whonix we’re quite confident that there are no IP/DNS leaks, but hardening the server software is still left to the user. In the Security Guide and in the Advanced Security Guide you’ll find pointers for hardening.</p>
+
+<p>Beware of application level leaks. See Protocol-Leak-Protection and Fingerprinting-Protection for definition. For example,</p>
+
+<pre><code>If you are using the Apache web server, it is advised to install libapache-mod-removeip[4] as well. A combination of Apache and mediawiki without libapache-mod-removeip being installed, wouldn't be the optimal case, since mediawiki by default puts IPs of anonymous editors in the public accessible editor logs. The IP would be 10.152.152.10. That could not be used to identify you, because that is not your real external IP address, but it would identify the server as a hidden service behind a Whonix-Gateway.[5]
+</code></pre>
+
+<p>Therefore any instructions on how to hide the IP address for your specific server software should be applied. Also other hardening instructions are recommended to apply. For example,</p>
+
+<pre><code>If you are using the Apache web server, see the following footnotes.
+</code></pre>
+
+    </section>
+  </article>
+
+  <article class='DELETE'>
+    <a name='/delete-a-thing' href='#/delete-a-thing'><h2><code><b>DELETE</b> _posts/2012-12-24-delete-a-thing.md</code> Whonix</h2></a>
+    <section class='body'>
+      <h3 id="about">About</h3>
+
+<p>Whonix is a desktop operating system designed for advanced security and privacy. It realistically addresses attacks while maintaining usability. It makes online anonymity possible via fail-safe, automatic, and desktop-wide use of the Tor network. A heavily reconfigured Debian base is run inside multiple virtual machines, providing a substantial layer of protection from malware and IP leaks. Pre-installed applications, pre-configured with safe defaults are ready for use. Additionally, installing custom applications or personalizing the desktop will in no way jeopardize the user. Whonix is the only actively developed OS designed to be run inside a VM and paired with Tor.</p>
+
+    </section>
+  </article>
+
+</section>
+
+  
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script src='assets.js' type='text/javascript'></script>
+  <script>require('boot');</script>
+</body>
+</html>
