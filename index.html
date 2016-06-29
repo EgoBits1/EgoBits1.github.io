@@ -8,6 +8,20 @@
     
     <title>Whonix</title>
     <link rel="shortcut icon" href="favicon.png">
+    
+    <script>
+        function loadCSS( href, before, media, callback ){ ... }
+        loadCSS( '/css/style.css' );
+    </script>
+    <style>
+        .some-styles {
+            font-weight: bold;
+        }
+        ...
+        .etc-etc {
+            color: #333333;
+        }
+    </style>
 
     <!-- Bootstrap core CSS -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:900,400,300" rel="stylesheet" type="text/css">
@@ -115,6 +129,11 @@
 		<div class="container">
 			<p>Whonix</p>
 		</div>
+		
+		<noscript>
+			<link href='/css/style.css' rel='stylesheet' type='text/css'>
+		</noscript>
+
     </footer>
   </body>
 </html>
