@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="favicon.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="http://fonts.googleapis.com/css?family=Raleway:900,400,300" rel="stylesheet" type="text/css">
     <link href="/css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -72,7 +71,7 @@
 		<div class="quad clearfix">
 			<div>
 				<div class="portfolio-block">
-					<a href="/windows"><img width="350" height="150" src="/img/win10.jpg" alt="Windows" class="editable"><a/>
+					<a href="/windows"><img width="350" height="150" src="/img/win10.jpg" alt="Windows" class="editable"></a>
 					<h4 class="editable">Windows</h4>
 				</div>
 			</div>
@@ -116,5 +115,36 @@
 			<p>Whonix</p>
 		</div>
     </footer>
+    <script>
+      /*!
+      Modified for brevity from https://github.com/filamentgroup/loadCSS
+      loadCSS: load a CSS file asynchronously.
+      [c]2014 @scottjehl, Filament Group, Inc.
+      Licensed MIT
+      */
+      function loadCSS(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+
+        ss.rel = 'stylesheet';
+        ss.href = href;
+
+        // temporarily, set media to something non-matching to ensure it'll
+        // fetch without blocking render
+        ss.media = 'only x';
+
+        ref.parentNode.insertBefore(ss, ref);
+
+        setTimeout( function(){
+          // set media back to `all` so that the stylesheet applies once it loads
+          ss.media = 'all';
+        },0);
+      }
+      loadCss('things.css');
+    </script>
+    <noscript>
+      <!-- Let's not assume anything -->
+      <link rel="stylesheet" href="things.css">
+    </noscript>
   </body>
 </html>
