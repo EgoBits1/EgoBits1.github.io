@@ -1,0 +1,3 @@
+__Welcome to the FrontPage of the extended documentation for Whonix__
+
+Insert Text and stuff here.
