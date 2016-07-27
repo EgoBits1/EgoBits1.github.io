@@ -10,47 +10,7 @@ html, body, input, textarea, select {
 	color: #444;
 	font-weight: 300;
 	font-size: 18px;
-}
 
-h1,
-h2,
-h3 {
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-h4,
-h5,
-h6 {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-weight: 400;
-}
-
-h1 {
-	display: none;
-	font-size: 70px;
-	font-weight: 100;
-}
-
-h2 {
-	font-size: 45px;
-}
-
-h3 {
-	font-size: 32px;
-}
-
-h4 {
-	font-size: 24px;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
-	font-size: 12px;
 }
 
 img, .portfolio-block {
