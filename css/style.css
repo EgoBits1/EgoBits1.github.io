@@ -266,50 +266,7 @@ form .container {
 	max-width: 800px;
 }
 
-input[type="text"], 
-input[type="email"],
-input[type="submit"],
-.button,
-textarea {
-	margin: 20px 0;
-	padding: 15px;
-	display: block;
-	width: 100%;
-	box-sizing: border-box;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-		    border-radius: 3px;
-}
 
-input[type="text"], 
-input[type="email"],
-textarea {
-	background: #f5f5f5;
-	border: 1px solid #bbb;
-}
-
-input[type="submit"],
-.button {
-	background: #1a73e2;
-	color: #fff;
-	border: 1px solid #114c95;
-	cursor: pointer;
-}
-
-input[type="submit"]:hover,
-.button:hover {
-	text-decoration: none;
-	color: #ddd;
-}
-
-input[type="submit"]:active,
-.button:active {
-	background: #115FC0;
-}
-
-textarea {
-	min-height: 170px;
-}
 
 @media only screen and (min-width: 725px) {
 
