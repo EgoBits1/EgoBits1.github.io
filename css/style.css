@@ -34,6 +34,22 @@ img.with-transparency {
 	        box-shadow: none;
 }
 
+
+a {
+	-webkit-transition: all ease 150ms;
+	-moz-transition: all ease 150ms;
+	-o-transition: all ease 150ms;
+	transition: all ease 150ms;
+	color: #428bca;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #2a6496;
+	text-decoration: underline;
+}
+
 .container {
 	width: 90%;
 	max-width: 1060px;
