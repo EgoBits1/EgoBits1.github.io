@@ -1,17 +1,3 @@
-html, body {
-	line-height: 2;
-	margin: 0;
-	padding: 0;
-	background: #fafafa;
-}
-
-html, body, input, textarea, select {
-	font-family: 'Raleway', sans-serif;
-	color: #444;
-	font-weight: 300;
-	font-size: 18px;
-}
-
 
 
 img, .portfolio-block {
