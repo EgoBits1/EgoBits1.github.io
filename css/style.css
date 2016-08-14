@@ -8,12 +8,49 @@ html, body {
 html, body, input, textarea, select {
 	font-family: 'Raleway', sans-serif;
 	color: #444;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 18px;
 }
 
-.editable {
-	font-weight: 100;
+h1,
+h2,
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h4,
+h5,
+h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+h1 {
+	display: none;
+	font-size: 70px;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 45px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 12px;
 }
 
 img, .portfolio-block {
@@ -36,6 +73,9 @@ img.with-transparency {
 	        box-shadow: none;
 }
 
+p {
+	margin: 0 0 10px;
+}
 
 a {
 	-webkit-transition: all ease 150ms;
@@ -94,7 +134,7 @@ header h1, header ul, header li {
 }
 
 header h1 a {
-	Cpunks-list 
+	height: 46px;
 	line-height: 0;
 	display: block;
 	padding: 10px 0;
@@ -103,12 +143,12 @@ header h1 a {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-nav {  
+nav {
 	border-bottom: 1px solid #61778D;
 	border-color: rgba(255,255,255,0.4);
 }
 
-nav li {  
+nav li {
 	font-size: 1em;
 	margin: 0;
 }
@@ -117,19 +157,18 @@ nav ul, nav li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	text-align: center;
 }
 
 nav a {
 	height: 50px;
 	line-height: 50px;
 	display: block;
-	padding: 0px;
+	padding: 0 20px;
 	text-decoration: none;
 	color: #b3c1ce;
 	background-color: #7691aa;
 	background-color: rgba(255,255,255,0.1);
-	font-weight: 100;
+	font-weight: 400;
 }
 
 nav a:hover {
@@ -401,27 +440,6 @@ textarea {
 	.thirds > div {
 		width: 31%;
 	}
-	
-	.quad + .quad, 
-	.halves + .halves, 
-	.quad + .halves, 
-	.halves + .quad {
-		margin-top: 20px;
-	}
-
-	.quad > div, .halves > div, .full {
-		text-align: center;
-		margin: 0 1%;
-	}
-
-	.quad > div, .halves > div, 
-	.left-column, .right-column {
-		float: left;
-	}
-
-	.quad > div {
-		width: 23%;
-	}
 
 	.halves > div {
 		width: 48%;
@@ -430,19 +448,4 @@ textarea {
 	.full > div {
 		width: 98%;
 	}
-
-
-.go-top {
-	position: fixed;
-	bottom: 2em;
-	right: 2em;
-	text-decoration: none;
-	color: blue;
-	background-color: rgba(0, 0, 0, 0.4);
-	font-size: 12px;
-	padding: 1em;
-}
-
-.go-top:hover {
-	background-color: rgba(0, 0, 0, 0.8);
 }
