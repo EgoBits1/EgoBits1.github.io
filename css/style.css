@@ -12,7 +12,9 @@ html, body, input, textarea, select {
 	font-size: 18px;
 }
 
-
+.editable {
+	font-weight: 100;
+}
 
 img, .portfolio-block {
 	max-width: 100%;
