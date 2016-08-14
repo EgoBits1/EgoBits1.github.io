@@ -157,13 +157,14 @@ nav ul, nav li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-align: center;
 }
 
 nav a {
 	height: 50px;
 	line-height: 50px;
 	display: block;
-	padding: 0px;
+	padding: 0 20px;
 	text-decoration: none;
 	color: #b3c1ce;
 	background-color: #7691aa;
