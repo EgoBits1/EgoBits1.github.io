@@ -441,6 +441,27 @@ textarea {
 	.thirds > div {
 		width: 31%;
 	}
+	
+	.quad + .quad, 
+	.halves + .halves, 
+	.quad + .halves, 
+	.halves + .quad {
+		margin-top: 20px;
+	}
+
+	.quad > div, .halves > div, .full {
+		text-align: center;
+		margin: 0 1%;
+	}
+
+	.quad > div, .halves > div, 
+	.left-column, .right-column {
+		float: left;
+	}
+
+	.quad > div {
+		width: 23%;
+	}
 
 	.halves > div {
 		width: 48%;
