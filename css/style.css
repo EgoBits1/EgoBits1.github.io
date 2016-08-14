@@ -8,7 +8,7 @@ html, body {
 html, body, input, textarea, select {
 	font-family: 'Raleway', sans-serif;
 	color: #444;
-	font-weight: lighter;
+	font-weight: 100;
 	font-size: 18px;
 }
 
@@ -127,7 +127,7 @@ nav a {
 	color: #b3c1ce;
 	background-color: #7691aa;
 	background-color: rgba(255,255,255,0.1);
-	font-weight: lighter;
+	font-weight: 100;
 }
 
 nav a:hover {
