@@ -73,7 +73,9 @@ img.with-transparency {
 	        box-shadow: none;
 }
 
-
+p {
+	margin: 0 0 10px;
+}
 
 a {
 	-webkit-transition: all ease 150ms;
@@ -161,7 +163,7 @@ nav a {
 	height: 50px;
 	line-height: 50px;
 	display: block;
-	padding: 0 20px;
+	padding: 0px;
 	text-decoration: none;
 	color: #b3c1ce;
 	background-color: #7691aa;
