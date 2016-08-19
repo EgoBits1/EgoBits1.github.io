@@ -1,32 +1,16 @@
 <?php
 
-## CONFIG ##
+if (isset($_POST['email'])) {
 
-# LIST EMAIL ADDRESS
-$recipient = "egobits1@gmail.com";
+$to = "$_POST['email']";
+$subject = "";
+$message = "";
+mail($to, $subject, $message);
 
-# SUBJECT (Subscribe/Remove)
-$subject = "Subscribe";
+$your_email = "egobits1@gmail.com";
+$subject_to_you = "someone subscribed to your news letter";
+$message_to_you = "";
+mail($your_email, $subject_to_you, $message_to_you);
 
-# RESULT PAGE
-$location = "egobits1.github.io";
-
-## FORM VALUES ##
-
-# SENDER - WE ALSO USE THE RECIPIENT AS SENDER IN THIS SAMPLE
-# DON'T INCLUDE UNFILTERED USER INPUT IN THE MAIL HEADER!
-$sender = $recipient;
-
-# MAIL BODY
-$body .= "Name: ".$_REQUEST['Name']." \n";
-$body .= "Email: ".$_REQUEST['Email']." \n";
-# add more fields here if required
-
-## SEND MESSGAE ##
-
-mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");
-
-## SHOW RESULT PAGE ##
-
-header( "Location: $location" );
+}
 ?>
