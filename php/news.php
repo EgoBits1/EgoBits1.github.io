@@ -9,7 +9,7 @@ $recipient = "egobits1@gmail.com";
 $subject = "Subscribe";
 
 # RESULT PAGE
-$location = "enter the URL of the result page here";
+$location = "egobits1.github.io";
 
 ## FORM VALUES ##
 
