@@ -40,12 +40,12 @@
 <section class="alternate-section">
 	<div class="container">
 		<div>
-			<form action="mailto:egobits1@gmail.com">
-			Newsletter: <input type="text" name="email"><br>
-			Bestellen: <input type="radio" name="wahl" value="1"><br>
-			Abbestellen: <input type="radio" name="wahl" value="2"><br>
-			<input type="submit" value="Absenden">
-			</form>
+			<form action="mail.php" method="post" class="newsletter" action="<?php echo $PHP_SELF;?>">
+<h3>Newsletter</h3><br>
+<p>Subscribe for news.</p></br>
+<input type="text" name="email" placeholder="Enter email address" size=40 class="input"/>
+<p><input type="submit" value="Subscribe" class="button" /></p>
+</form>
 		</div>
 	</div>
 </section>
