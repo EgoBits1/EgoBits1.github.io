@@ -474,12 +474,12 @@ textarea {
 
 }
 @font-face {
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway';
     src: url('Raleway-Thin.ttf');
 }
 
 .thin {
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway';
 }
 
 .go-top {
