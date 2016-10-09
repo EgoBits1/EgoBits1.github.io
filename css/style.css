@@ -66,7 +66,7 @@ img, .portfolio-block {
 	        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-block img, 
+.portfolio-block img,
 img.with-transparency {
 	-webkit-box-shadow: none;
 	   -moz-box-shadow: none;
@@ -138,7 +138,7 @@ header h1 a {
 	line-height: 0;
 	display: block;
 	padding: 10px 0;
-	
+
 	background-color: #61778D;
 	background-color: rgba(0, 0, 0, 0.2);
 }
@@ -187,7 +187,7 @@ nav a:active {
 }
 
 .hero, .bright-section {
-	background: #caa780 url('../img/bright-background.jpg') no-repeat bottom center fixed; 
+	background: #caa780 url('../img/bright-background.jpg') no-repeat bottom center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -202,8 +202,8 @@ nav a:active {
 }
 
 .hero {
-	background-color: #70757e; 
-	background-image: url('../img/hero-background.jpg'); 
+	background-color: #70757e;
+	background-image: url('../img/hero-background.jpg');
 	padding: 0 0 80px 0;
 }
 
@@ -244,7 +244,7 @@ nav a:active {
 	border-bottom: 1px solid #EEE;
 }
 
-.portfolio-block h4, 
+.portfolio-block h4,
 .portfolio-block p {
 	padding: 5px 10px;
 	line-height: 1;
@@ -306,7 +306,7 @@ form .container {
 	max-width: 800px;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 input[type="submit"],
 .button,
@@ -321,7 +321,7 @@ textarea {
 		    border-radius: 3px;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 textarea {
 	background: #f5f5f5;
@@ -372,7 +372,7 @@ textarea {
 	header h1 {
 		float: left;
 	}
-	
+
 	nav {
 		text-align: center;
 		float: right;
@@ -421,9 +421,9 @@ textarea {
 		margin: 0 0 0 5%;
 	}
 
-	.thirds + .thirds, 
-	.halves + .halves, 
-	.thirds + .halves, 
+	.thirds + .thirds,
+	.halves + .halves,
+	.thirds + .halves,
 	.halves + .thirds {
 		margin-top: 20px;
 	}
@@ -433,7 +433,7 @@ textarea {
 		margin: 0 1%;
 	}
 
-	.thirds > div, .halves > div, 
+	.thirds > div, .halves > div,
 	.left-column, .right-column {
 		float: left;
 	}
@@ -441,10 +441,10 @@ textarea {
 	.thirds > div {
 		width: 31%;
 	}
-	
-	.quad + .quad, 
-	.halves + .halves, 
-	.quad + .halves, 
+
+	.quad + .quad,
+	.halves + .halves,
+	.quad + .halves,
 	.halves + .quad {
 		margin-top: 20px;
 	}
@@ -454,7 +454,7 @@ textarea {
 		margin: 0 1%;
 	}
 
-	.quad > div, .halves > div, 
+	.quad > div, .halves > div,
 	.left-column, .right-column {
 		float: left;
 	}
