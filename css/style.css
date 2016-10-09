@@ -475,7 +475,7 @@ textarea {
 }
 @font-face {
     font-family: 'Raleway-Thin';
-    src: url('/site/resources/fonts/Raleway-Thin.ttf');
+    src: url('Raleway-Thin.ttf');
 }
 
 .thin {
