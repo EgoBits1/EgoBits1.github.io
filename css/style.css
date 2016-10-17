@@ -12,17 +12,6 @@ html, body, input, textarea, select {
 	font-size: 18px;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 20em; /* Will be AT MOST 20em wide */
-}
-
-.wrapper {
-  min-width: 50em; /* Overrides max-width */
-  width: 100%;
-  max-width: 20em; /* Will be AT MOST 20em wide */
-}
-
 h1,
 h2,
 h3 {
